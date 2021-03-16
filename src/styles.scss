@@ -7896,7 +7896,7 @@ button, a {
 
 .btn.btn-primary {
   color: #fefefe;
-  background: #AB2B30
+  background: #4B4F55
 }
 
 .btn.btn-footer {
@@ -10946,6 +10946,7 @@ button, a {
 
 .location-img {
   display: block;
+  width: 95%;
   margin: 0 auto 2.5rem auto
 }
 
@@ -11062,7 +11063,8 @@ button, a {
 
 .enquiry-form .form-block textarea {
   min-height: 10rem;
-  padding: 0.75rem 1rem
+  padding: 0.75rem 1rem;
+  resize: none;
 }
 
 .enquiry-form .form-block .btn {

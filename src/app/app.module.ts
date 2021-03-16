@@ -46,11 +46,8 @@ import {RouterModule} from '@angular/router';
         path: 'about',
         component: AboutComponent
       },
-      {
-        path: '**',
-        redirectTo: 'index',
-        pathMatch: 'full'
-      },
+
+      { path: '**', pathMatch: 'full' , redirectTo : 'home' }
 
     ]),
   ],

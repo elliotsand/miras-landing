@@ -39,6 +39,10 @@ import {RouterModule} from '@angular/router';
         component: ProjectsComponent
       },
       {
+        path: 'projects/internal',
+        component: ProjectsInternalComponent
+      },
+      {
         path: 'contact',
         component: ContactComponent
       },

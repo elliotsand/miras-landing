@@ -7669,6 +7669,9 @@ ul.no-bullet, ol.no-bullet {
 .text-white {
   color: #fefefe
 }
+.text-c-second {
+  color: #6AAFAA
+}
 
 .text-black {
   color: #4B4F55
@@ -8324,10 +8327,10 @@ button, a {
 .site-header .header-inner nav ul li a::before {
   content: '';
   position: absolute;
-  bottom: 100%;
+  top: 100%;
   left: 50%;
-  width: 2px;
-  height: 3rem;
+  width: 3rem;
+  height: 2px;
   background: #fefefe;
   -webkit-transform-origin: top;
   -ms-transform-origin: top;

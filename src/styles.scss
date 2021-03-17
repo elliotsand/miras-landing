@@ -10024,7 +10024,7 @@ button, a {
   -ms-flex-align: center;
   align-items: center;
   padding: 2.5rem 5vw;
-  background-color: #1B1E25;
+  background: transparent linear-gradient(138deg, #7CC6BF 0%, #7BB9BB 9%, #715B9A 78%, #6F4292 100%) 0% 0% no-repeat padding-box;
   //background-image: url("../img/backgrounds/logo-m-bg.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -11170,4 +11170,9 @@ button, a {
 
 .article-nav a:last-child .text {
   margin-right: 0.5rem
+}
+
+
+.carousel-dots{
+  bottom: -10px !important;
 }

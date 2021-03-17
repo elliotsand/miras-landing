@@ -10,6 +10,7 @@ import {ProjectsComponent} from './projects/projects.component';
 import {ContactComponent} from './contact/contact.component';
 import {AboutComponent} from './about/about.component';
 import {ProjectsInternalComponent} from './projects-internal/projects-internal.component';
+import {serviceInternalComponent} from './service-internal/service-internal.component';
 import {RouterModule} from '@angular/router';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 
@@ -21,6 +22,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     ProjectsComponent,
     ContactComponent,
     AboutComponent,
+    serviceInternalComponent,
     ProjectsInternalComponent
   ],
   imports: [
@@ -36,11 +38,15 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
         component: ServiceComponent
       },
       {
+        path: 'service',
+        component: serviceInternalComponent
+      },
+      {
         path: 'projects',
         component: ProjectsComponent
       },
       {
-        path: 'projects/internal',
+        path: 'project',
         component: ProjectsInternalComponent
       },
       {

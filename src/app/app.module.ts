@@ -11,7 +11,7 @@ import {ContactComponent} from './contact/contact.component';
 import {AboutComponent} from './about/about.component';
 import {ProjectsInternalComponent} from './projects-internal/projects-internal.component';
 import {RouterModule} from '@angular/router';
-
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -24,6 +24,7 @@ import {RouterModule} from '@angular/router';
     ProjectsInternalComponent
   ],
   imports: [
+    IvyCarouselModule,
     BrowserModule,
     RouterModule.forRoot([
       {

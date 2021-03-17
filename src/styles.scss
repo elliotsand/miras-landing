@@ -7782,7 +7782,7 @@ img {
   width: 2rem;
   height: 2px;
   margin: 0 0.75rem 0 0;
-  background: #AB2B30
+  background: #7CC6BF
 }
 
 .line-heading + .text-3xl {
@@ -9215,6 +9215,17 @@ button, a {
 }
 
 .tabs-container .tabs button {
+  position: relative;
+  display: block;
+  margin: 0 1rem;
+  padding: 2rem 0;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9E9FA2
+}
+.tabs-container .tabs a {
   position: relative;
   display: block;
   margin: 0 1rem;

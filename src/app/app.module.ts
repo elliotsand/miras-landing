@@ -12,7 +12,9 @@ import {AboutComponent} from './about/about.component';
 import {ProjectsInternalComponent} from './projects-internal/projects-internal.component';
 import {serviceInternalComponent} from './service-internal/service-internal.component';
 import {RouterModule} from '@angular/router';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselHolderComponent } from './carousel-holder/carousel-holder.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,13 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     ContactComponent,
     AboutComponent,
     serviceInternalComponent,
-    ProjectsInternalComponent
+    ProjectsInternalComponent,
+    CarouselHolderComponent,
+
   ],
   imports: [
-    IvyCarouselModule,
+    CarouselModule,
+    BrowserAnimationsModule,
     BrowserModule,
     RouterModule.forRoot([
       {

@@ -7669,6 +7669,7 @@ ul.no-bullet, ol.no-bullet {
 .text-white {
   color: #fefefe
 }
+
 .text-c-second {
   color: #6AAFAA
 }
@@ -8876,9 +8877,17 @@ button, a {
   padding: 0.75rem
 }
 
+.card-list .card.card-owl {
+  width: 100%;
+  padding: 0.75rem
+}
+
 @media print, screen and (min-width: 40em) {
   .card-list .card {
     width: 50%
+  }
+  .card-list .card.card-owl {
+    width: 100%
   }
 }
 
@@ -8886,6 +8895,9 @@ button, a {
   .card-list .card {
     width: 50%;
     padding: 1.25rem
+  }
+  .card-list .card.card-owl {
+    width: 100%
   }
 }
 
@@ -9225,6 +9237,7 @@ button, a {
   letter-spacing: 0.1em;
   color: #9E9FA2
 }
+
 .tabs-container .tabs a {
   position: relative;
   display: block;
@@ -11173,6 +11186,6 @@ button, a {
 }
 
 
-.carousel-dots{
+.carousel-dots {
   bottom: -10px !important;
 }

@@ -10,7 +10,7 @@ import {ProjectsComponent} from './projects/projects.component';
 import {ContactComponent} from './contact/contact.component';
 import {AboutComponent} from './about/about.component';
 import {ProjectsInternalComponent} from './projects-internal/projects-internal.component';
-import {serviceInternalComponent} from './service-internal/service-internal.component';
+import {ServiceInternalComponent} from './service-internal/service-internal.component';
 import {RouterModule} from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CarouselHolderComponent } from './carousel-holder/carousel-holder.component';
@@ -24,7 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjectsComponent,
     ContactComponent,
     AboutComponent,
-    serviceInternalComponent,
+    ServiceInternalComponent,
     ProjectsInternalComponent,
     CarouselHolderComponent,
 
@@ -44,7 +44,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       },
       {
         path: 'service',
-        component: serviceInternalComponent
+        component: ServiceInternalComponent
       },
       {
         path: 'projects',

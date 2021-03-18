@@ -7,6 +7,14 @@
 
 }
 
+@font-face {
+  font-family: 'gothamboldregular';
+  src: url('assets/gothambold-webfont.woff2') format('woff2'),
+  url('assets/gothambold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 @font-face {
   font-family: 'gothamregular';
@@ -7663,7 +7671,7 @@ ul.no-bullet, ol.no-bullet {
 }
 
 .text-bold {
-  font-weight: 600
+  font-family: 'gothamboldregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 .text-white {
@@ -8374,13 +8382,13 @@ button, a {
 
 @media print, screen and (min-width: 40em) {
   .site-header.header-shrunk .header-inner {
-    height: 5rem
+    height: 6rem
   }
 }
 
 @media print, screen and (min-width: 64em) {
   .site-header.header-shrunk .header-inner {
-    height: 6rem
+    height: 8rem
   }
 }
 

@@ -10,11 +10,14 @@ import {ProjectsComponent} from './projects/projects.component';
 import {ContactComponent} from './contact/contact.component';
 import {AboutComponent} from './about/about.component';
 import {ProjectsInternalComponent} from './projects-internal/projects-internal.component';
-import {ServiceInternalComponent} from './service-internal/service-internal.component';
 import {RouterModule} from '@angular/router';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { CarouselHolderComponent } from './carousel-holder/carousel-holder.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {CarouselModule} from 'ngx-owl-carousel-o';
+import {CarouselHolderComponent} from './carousel-holder/carousel-holder.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ServiceIngenieriaComponent} from './service-ingeneria/service-ingenieria.component';
+import {ServiceSupervisionComponent} from './service-supervision/service-supervision.component';
+import {ServiceBimComponent} from './service-bim/service-bim.component';
+import {ServiceDireccionComponent} from './service-direccion/service-direccion.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +27,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjectsComponent,
     ContactComponent,
     AboutComponent,
-    ServiceInternalComponent,
     ProjectsInternalComponent,
     CarouselHolderComponent,
-
+    ServiceIngenieriaComponent,
+    ServiceDireccionComponent,
+    ServiceSupervisionComponent,
+    ServiceBimComponent,
   ],
   imports: [
     CarouselModule,
@@ -43,8 +48,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         component: ServiceComponent
       },
       {
-        path: 'service',
-        component: ServiceInternalComponent
+        path: 'ingeneria',
+        component: ServiceIngenieriaComponent
+      },
+      {
+        path: 'bim',
+        component: ServiceBimComponent
+      },
+      {
+        path: 'supervision',
+        component: ServiceSupervisionComponent
+      },
+      {
+        path: 'direccion',
+        component: ServiceDireccionComponent
       },
       {
         path: 'projects',
@@ -63,7 +80,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         component: AboutComponent
       },
 
-      { path: '**', pathMatch: 'full' , redirectTo : 'home' }
+      {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
     ]),
   ],

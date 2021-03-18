@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import {OwlOptions} from 'ngx-owl-carousel-o';
 
+
 @Component({
-  selector: 'app-service-internal',
-  templateUrl: './service-internal.component.html',
-  styleUrls: ['./service-internal.component.scss']
+  selector: 'app-service-direccion',
+  templateUrl: './service-direccion.component.html',
+  styleUrls: ['./service-direccion.component.scss']
 })
-export class ServiceInternalComponent implements OnInit {
+export class ServiceDireccionComponent implements OnInit {
 
   constructor() { }
-  customOptions: OwlOptions = {
+  customdirec: OwlOptions = {
     loop: true,
     mouseDrag: false,
     touchDrag: false,
@@ -35,5 +36,6 @@ export class ServiceInternalComponent implements OnInit {
   };
 
   ngOnInit(): void {
+
   }
 }

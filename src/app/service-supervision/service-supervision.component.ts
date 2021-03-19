@@ -17,6 +17,7 @@ export class ServiceSupervisionComponent implements OnInit {
     pullDrag: false,
     dots: true,
     navSpeed: 700,
+    navText: [ '<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>' ],
     responsive: {
       0: {
         items: 1

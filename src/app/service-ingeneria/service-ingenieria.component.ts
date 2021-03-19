@@ -17,6 +17,7 @@ export class ServiceIngenieriaComponent implements OnInit {
     touchDrag: true,
     pullDrag: false,
     dots: true,
+    navText: [ '<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>' ],
     navSpeed: 700,
     responsive: {
       0: {

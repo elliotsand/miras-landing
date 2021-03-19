@@ -1936,7 +1936,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #0C1017;
+  background: #4b4f55;
   font-family: 'gothamregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
@@ -2019,7 +2019,7 @@ button, input, optgroup, select, textarea {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #0C1017;
+  color: #4b4f55;
   -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
   transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
@@ -2108,7 +2108,7 @@ label {
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.8;
-  color: #0C1017
+  color: #4b4f55
 }
 
 label.middle {
@@ -2120,7 +2120,7 @@ label.middle {
   margin-top: -.5rem;
   font-size: .8125rem;
   font-style: italic;
-  color: #0C1017
+  color: #4b4f55
 }
 
 .input-group {
@@ -2151,7 +2151,7 @@ label.middle {
   padding: 0 1rem;
   border: 1px solid #9E9FA2;
   background: #C2C3C5;
-  color: #0C1017;
+  color: #4b4f55;
   text-align: center;
   white-space: nowrap;
   display: -webkit-box;
@@ -2239,7 +2239,7 @@ select {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #0C1017;
+  color: #4b4f55;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%2885, 88, 93%29'></polygon></svg>");
   background-origin: content-box;
   background-position: right -1rem center;
@@ -7732,7 +7732,7 @@ p + .text-sm {
 
 p a {
   position: relative;
-  color: #0C1017
+  color: #4b4f55
 }
 
 p a::after {
@@ -7767,13 +7767,13 @@ img {
 
 @media print, screen and (min-width: 40em) {
   .content {
-    padding: 5rem 5vw
+    padding: 3rem 5vw
   }
 }
 
 @media print, screen and (min-width: 64em) {
   .content {
-    padding: 7.5rem 5vw
+    padding: 4.5rem 5vw
   }
 }
 
@@ -7844,7 +7844,8 @@ button, a {
 
 .btn span {
   position: relative;
-  z-index: 1
+  z-index: 1;
+  font-family: 'gothamboldregular';
 }
 
 .btn::before {
@@ -7890,7 +7891,7 @@ button, a {
 }
 
 .btn.btn-stroke.btn-white:hover {
-  color: #0C1017
+  color: #676c9c
 }
 
 .btn.btn-stroke.btn-black {
@@ -7915,11 +7916,13 @@ button, a {
   color: #4B4F55;
   background: transparent;
   border: 4px solid #4B4F55;
-  height: 5rem;
-  max-width: 290px;
   padding: 0;
   margin: 10px 6px 0;
-
+  text-align: left;
+  height: 7rem;
+  width: 320px;
+  letter-spacing: 0px;
+  line-height: 1.3;
   &::before {
     background-color: #fff;
   }
@@ -7929,10 +7932,41 @@ button, a {
     z-index: 10;
     height: 60px;
     padding: 0 10px;
+    object-fit: contain;
   }
 
   span {
-    font-size: 17px;
+    font-size: 20px;
+    width: 180px;
+  }
+}
+.btn.btn-tabs {
+  color: #4B4F55;
+  background: transparent;
+  border: 4px solid #4B4F55;
+  padding: 0 !important;
+  margin: 10px 6px 0;
+  text-align: left;
+  height: 5rem;
+  width: 320px;
+  letter-spacing: 0px;
+  line-height: 1.3;
+  display: flex !important;
+  &::before {
+    background-color: rgba(255,255,255,0.9);
+  }
+  img {
+    width: 60px;
+    z-index: 100;
+    height: 60px;
+    padding: 0 10px;
+    object-fit: contain;
+    display: inline-block;
+  }
+  span {
+    font-size: 18px;
+    width: 180px;
+    display: inline-block;
   }
 }
 
@@ -8407,7 +8441,7 @@ button, a {
 
 .site-footer {
   padding: 2.5rem 5vw 2.5rem 5vw;
-  background: #0C1017
+  background: #4b4f55
 }
 
 @media print, screen and (min-width: 40em) {
@@ -8511,7 +8545,7 @@ button, a {
 
 @media print, screen and (min-width: 64em) {
   .site-footer .footer-bottom {
-    padding-top: 5rem
+    padding-top: 1rem
   }
 }
 
@@ -8805,7 +8839,7 @@ button, a {
 
 @media print, screen and (min-width: 40em) {
   .hero {
-    min-height: 50vh;
+    min-height: 70vh;
     padding: 12.5rem 5vw 10rem 5vw
   }
 }
@@ -8926,7 +8960,7 @@ button, a {
   position: relative;
   z-index: 1;
   padding-top: 80%;
-  background: #0C1017
+  background: #4b4f55
 }
 
 .card-list .card a .image .inner {
@@ -9017,25 +9051,25 @@ button, a {
 
 @media print, screen and (min-width: 40em) {
   .card-list .card a:hover .text {
-    -webkit-transform: translateY(-4.5rem);
-    -ms-transform: translateY(-4.5rem);
-    transform: translateY(-4.5rem)
+    //-webkit-transform: translateY(-4.5rem);
+    //-ms-transform: translateY(-4.5rem);
+    //transform: translateY(-4.5rem)
   }
 }
 
 @media print, screen and (min-width: 64em) {
   .card-list .card a:hover .text {
-    -webkit-transform: translateY(-5.5rem);
-    -ms-transform: translateY(-5.5rem);
-    transform: translateY(-5.5rem)
+    //-webkit-transform: translateY(-5.5rem);
+    //-ms-transform: translateY(-5.5rem);
+    //transform: translateY(-5.5rem)
   }
 }
 
 @media screen and (min-width: 75em) {
   .card-list .card a:hover .text {
-    -webkit-transform: translateY(-6rem);
-    -ms-transform: translateY(-6rem);
-    transform: translateY(-6rem)
+    //-webkit-transform: translateY(-6rem);
+    //-ms-transform: translateY(-6rem);
+    //transform: translateY(-6rem)
   }
 }
 
@@ -9202,7 +9236,7 @@ button, a {
 
 @media print, screen and (min-width: 64em) {
   .tabs-container {
-    top: 6rem
+    top: 8rem
   }
 }
 
@@ -9482,7 +9516,9 @@ button, a {
   color: white;
   background-color: #4B4F55;
   display: inline-block;
-  padding: 0 8px;
+  padding: 25px 17px;
+  margin: 25px 0 35px;
+  font-size: 30px;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -10111,7 +10147,7 @@ button, a {
 
 .home-about .text .inner {
   width: 100%;
-  max-width: 35rem
+  max-width: 30rem
 }
 
 @media print, screen and (min-width: 64em) {
@@ -10127,7 +10163,7 @@ button, a {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: #0C1017
+  background: #4b4f55
 }
 
 .home-services a {

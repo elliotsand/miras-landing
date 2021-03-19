@@ -12,12 +12,11 @@ export class ServiceSupervisionComponent implements OnInit {
   constructor() { }
   customsuper: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
     pullDrag: false,
     dots: true,
     navSpeed: 700,
-    navText: ['', ''],
     responsive: {
       0: {
         items: 1

@@ -9,12 +9,12 @@ import {OwlOptions} from 'ngx-owl-carousel-o';
 export class CarouselHolderComponent {
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
     pullDrag: false,
     dots: true,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: [ '<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>' ],
     responsive: {
       0: {
         items: 1

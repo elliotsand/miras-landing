@@ -111,7 +111,7 @@
           <div class="cell">
             <ul class="card-list">
               <li class="card fade-up">
-                <a href="#team88" data-modal>
+                <div class="team" (click)="modalOpen()" data-modal>
                   <div class="image">
                     <div class="inner"
                          style="background-image:url('assets/img/Menu/pexels-mentatdgt-937481.jpg');"></div>
@@ -128,10 +128,10 @@
                       </button>
                     </div>
                   </div>
-                </a>
+                </div>
               </li>
               <li class="card fade-up">
-                <a href="#team108" data-modal>
+                <div class="team" (click)="modalOpen()" data-modal>
                   <div class="image">
                     <div class="inner"
                          style="background-image:url('assets/img/Menu/pexels-mentatdgt-937481.jpg');"></div>
@@ -148,7 +148,7 @@
                       </button>
                     </div>
                   </div>
-                </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -157,62 +157,30 @@
     </div>
   </div>
 
-  <div><!-- Sticky container end -->
+  <div class="ovelay" (click)="closeOpen()" *ngIf="open">
 
-    <div id="team88" class="modal team-modal">
-      <h2 class="text-2xl text-uppercase text-bold text-black">Gordon Mitchell</h2>
+    <div id="team88" class=" team-modal">
+      <h3 class="text-sm text-uppercase text-gray-md tracking-wide">ingeniero civil</h3>
+      <h2 class="text-lg text-bold text-black text-uppercase">Andres O. Romero Mego</h2>
+      <h3 class="text-md text-uppercase text-c-second tracking-wide">Jefe de Proyectos</h3>
       <div class="team-bio-details">
+
         <div class="row">
-          <div class="title">Job Title</div>
-          <div class="value">Owner</div>
-        </div>
-        <div class="row">
-          <div class="title">Qualifications</div>
-          <div class="flex-column">
-            <div class="value">Joiner by trade</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="title">Years in Industry</div>
-          <div class="value">40</div>
-        </div>
-        <div class="row">
-          <div class="title">Years at GM</div>
-          <div class="value">30</div>
-        </div>
-        <div class="row">
-          <div class="title">Main Roles and Responsibilities</div>
-          <div class="value"><p>Oversees all areas of business, manages projects and contracts.<br/>
-            Managed projects up to £10 million. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="team108" class="modal team-modal">
-      <h2 class="text-2xl text-uppercase text-bold text-black">Andy Fleming</h2>
-      <div class="team-bio-details">
-        <div class="row">
-          <div class="title">Job Title</div>
-          <div class="value">Design Technician</div>
-        </div>
-        <div class="row">
-          <div class="title">Qualifications</div>
-          <div class="flex-column">
-            <div class="value">HND Architectural Technology</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="title">Years in Industry</div>
-          <div class="value">22</div>
-        </div>
-        <div class="row">
-          <div class="title">Years at GM</div>
-          <div class="value">18</div>
-        </div>
-        <div class="row">
-          <div class="title">Main Roles and Responsibilities</div>
-          <div class="value"><p>Being the first point of contact for clients, preparing quotation, designing timber
-            kits, procuring materials. Overseeing factory productions. </p>
+          <div class="value"><p>Ingeniero Civil Colegiado con CIP 167972 con 10 años de experiencia en el rubro de la
+            construcción, con altos conocimientos en la especialidad del diseño y cálculo estructural.
+            <br>
+            <br>
+            Cuenta con amplia experiencia en la gestión de proyectos bajo los estándares del PMI, en la
+            dirección de obras de
+            infraestructuras bajo la filosofía Lean Construction (Edificios multifamiliares, centros educativos y
+            retail), con conocimientos de dirección de proyectos de puentes en provincias del Perú; así como en
+            construcción de obras de arte en minería.
+            <br>
+            <br>
+            Cuenta con estudios en Gestión de la calidad para la construcción
+            bajo los estándares del PMI, con diploma de Especialización en planificación y control de proyectos de
+            construcción, diploma de Especialización en BIM MANAGEMENT - CATALUNYA - ESPAÑA, capacitación en Residencia
+            de Obra - CIP y capacitación en Gestión de la Calidad estándares del PMI - PUCP. </p>
           </div>
         </div>
       </div>

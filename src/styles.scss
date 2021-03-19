@@ -9000,6 +9000,58 @@ button, a {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease
 }
 
+.card-list .card .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: #fefefe
+}
+
+.card-list .card .team .image {
+  position: relative;
+  z-index: 1;
+  padding-top: 80%;
+  background: #4b4f55
+}
+
+.card-list .card .team .image .inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease
+}
+
+.card-list .card .team .text {
+  position: relative;
+  z-index: 2;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  background: #fefefe;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease
+}
+
 @media print, screen and (min-width: 40em) {
   .card-list .card a .text {
     padding: 2rem
@@ -10841,84 +10893,62 @@ button, a {
   background-color: rgba(12, 16, 23, 0.75)
 }
 
-.modal.video-modal {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none
-}
-
-.modal.video-modal .close-modal {
-  top: -1.25rem;
-  right: -1.25rem;
-  width: 2.5rem;
-  height: 2.5rem
-}
-
-.modal.video-modal .embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%
-}
-
-.modal.video-modal .embed-container iframe, .modal.video-modal .embed-container object, .modal.video-modal .embed-container embed {
-  display: block;
-  position: absolute;
+.ovelay {
+  position: fixed;
   top: 0;
-  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%
+  z-index: 1000;
+  background-color: rgba(12, 16, 23, 0.75)
 }
 
-.modal.team-modal {
-  width: 100%;
+.team-modal {
+  width: 70%;
   max-width: 37.5rem;
   padding: 2rem;
   border-radius: 0;
   -webkit-box-shadow: none;
-  box-shadow: none
+  box-shadow: none;
+  background-color: #fff;
+  margin: auto;
 }
 
 @media print, screen and (min-width: 40em) {
-  .modal.team-modal {
+  .team-modal {
     padding: 2.5rem
   }
 }
 
 @media print, screen and (min-width: 64em) {
-  .modal.team-modal {
+  .team-modal {
     padding: 3rem
   }
 }
 
-.modal.team-modal .close-modal {
+.team-modal .close-modal {
   top: -1.25rem;
   right: -1.25rem;
   width: 2.5rem;
   height: 2.5rem
 }
 
-.modal.team-modal .team-bio-details {
+.team-modal .team-bio-details {
   margin-top: 1.5rem
 }
 
 @media print, screen and (min-width: 40em) {
-  .modal.team-modal .team-bio-details {
+  .team-modal .team-bio-details {
     margin-top: 2rem
   }
 }
 
 @media print, screen and (min-width: 64em) {
-  .modal.team-modal .team-bio-details {
+  .team-modal .team-bio-details {
     margin-top: 2.5rem
   }
 }
 
-.modal.team-modal .team-bio-details .row {
+.team-modal .team-bio-details .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10931,7 +10961,7 @@ button, a {
 }
 
 @media print, screen and (min-width: 40em) {
-  .modal.team-modal .team-bio-details .row {
+  .team-modal .team-bio-details .row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -10940,19 +10970,19 @@ button, a {
   }
 }
 
-.modal.team-modal .team-bio-details .row .title {
+.team-modal .team-bio-details .row .title {
   margin-bottom: 0.125rem;
   color: #9E9FA2
 }
 
 @media print, screen and (min-width: 40em) {
-  .modal.team-modal .team-bio-details .row .title {
+  .team-modal .team-bio-details .row .title {
     width: 12.5rem;
     margin: 0
   }
 }
 
-.modal.team-modal .team-bio-details .row .value {
+.team-modal .team-bio-details .row .value {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;

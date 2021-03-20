@@ -1092,7 +1092,7 @@ p.has-text-color a {
   content: "\00b7 \00b7 \00b7";
   color: currentColor;
   font-size: 20px;
-  letter-spacing: 2em;
+  letter-spacing: 1em;
   padding-left: 2em;
   font-family: 'gothamregular';
 }
@@ -2369,6 +2369,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.25rem;
   line-height: 1.4;
+  letter-spacing: 1rem;
   margin-top: 0;
   margin-bottom: .5rem
 }
@@ -2430,7 +2431,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #932529
+  color: #6F4292
 }
 
 a img {
@@ -11054,7 +11055,8 @@ button, a {
 
 .location-img {
   display: block;
-  width: 95%;
+  width: 70%;
+  opacity: 0.8;
   margin: 0 auto 2.5rem auto
 }
 

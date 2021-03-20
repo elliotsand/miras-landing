@@ -2327,7 +2327,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 p {
   margin-bottom: 1rem;
   font-size: inherit;
-  line-height: 1.7;
+  line-height: 1.3;
   text-rendering: optimizeLegibility
 }
 
@@ -8214,7 +8214,8 @@ button, a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: transparent linear-gradient(96deg, #7CC6BF 0%, #7BB9BB 9%, #715B9A 78%, #6F4292 100%) 0% 0% no-repeat padding-box;
+  //background: transparent linear-gradient(96deg, #7CC6BF 0%, #7BB9BB 9%, #715B9A 78%, #6F4292 100%) 0% 0% no-repeat padding-box;
+  background-image: url('assets/img/Menu/heatherBg.jpg');
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -10139,9 +10140,9 @@ button, a {
   -ms-flex-align: center;
   align-items: center;
   padding: 2.5rem 5vw;
-  background: transparent linear-gradient(138deg, #7CC6BF 0%, #7BB9BB 9%, #715B9A 78%, #6F4292 100%) 0% 0% no-repeat padding-box;
-  //background-image: url("../img/backgrounds/logo-m-bg.svg");
-  background-position: center bottom;
+  //background: transparent linear-gradient(138deg, #7CC6BF 0%, #7BB9BB 9%, #715B9A 78%, #6F4292 100%) 0% 0% no-repeat padding-box;
+  background-image: url("assets/img/Menu/Bg 2.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover
 }
@@ -11270,4 +11271,14 @@ button, a {
 
 .carousel-dots {
   bottom: -10px !important;
+}
+
+.social-home{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  a{
+    color: #FFFFFF;
+    font-size: 40px;
+  }
 }

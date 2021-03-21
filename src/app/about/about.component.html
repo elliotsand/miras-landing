@@ -176,9 +176,12 @@
     </div>
   </div>
 
-  <div class="ovelay" (click)="closeOpen()" *ngIf="open">
+  <div class="ovelay" *ngIf="open">
 
     <div id="team88" class=" team-modal">
+      <button class="menu-close" (click)="closeOpen()">
+        <i class="fas fa-times"></i>
+      </button>
       <h3 class="text-sm text-uppercase text-gray-md tracking-wide">ingeniero civil</h3>
       <h2 class="text-lg text-bold text-black text-uppercase">Andres O. Romero Mego</h2>
       <h3 class="text-md text-uppercase text-c-second tracking-wide">Jefe de Proyectos</h3>

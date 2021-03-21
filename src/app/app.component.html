@@ -4,7 +4,8 @@
       <div class="cell">
         <div class="header-inner">
           <a class="logo" routerLink="/">
-            <img src="assets/img/Logo-miras-2.png" alt="">
+            <img class="blanco" src="assets/img/Logo-miras-2.png" alt="">
+            <img class="gris" src="assets/img/Logo-mira2s.png" alt="">
             <div id="lottie"></div>
           </a>
           <button class="menu-trigger hide-for-large" (click)="openMenu()" >
@@ -39,7 +40,7 @@
 
 <div class="menu"  [ngClass]="{'is-open' : menuState == 'open'}">
   <button class="menu-close" (click)="closeMenu()">
-    <i class="far fa-times-circle"></i>
+    <i class="fas fa-times"></i>
   </button>
   <div class="top">
     <nav>

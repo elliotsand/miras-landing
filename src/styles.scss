@@ -9584,11 +9584,19 @@ button, a {
   color: white;
   background-color: #4B4F55;
   display: inline-block;
-  padding: 25px 17px;
+  padding: 25px 50px;
   margin: 25px 0 35px;
-  font-size: 30px;
 }
 
+@media print, screen and (min-width: 40em) {
+  .label-footer {
+    color: white;
+    background-color: #4B4F55;
+    display: inline-block;
+    padding: 25px 17px;
+    margin: 25px 0 35px;
+  }
+}
 @media print, screen and (min-width: 40em) {
   .contact-cta {
     padding: 5rem 5vw
@@ -10288,7 +10296,7 @@ button, a {
   -ms-flex-pack: center;
   justify-content: center;
   height: 50vw;
-  border: 2.5vw solid #0C1017
+  //border: 2.5vw solid #0C1017
 }
 
 @media print, screen and (min-width: 64em) {

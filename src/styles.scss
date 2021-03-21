@@ -7720,7 +7720,7 @@ ul.no-bullet, ol.no-bullet {
 }
 
 .tracking-wide {
-  letter-spacing: 0.1em
+  //letter-spacing: 0.1em
 }
 
 .text-3xl + p {
@@ -7832,7 +7832,7 @@ button, a {
   font-size: 0.875rem;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  //letter-spacing: 0.1em;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease
 }
@@ -8348,7 +8348,7 @@ button, a {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em
+  //letter-spacing: 0.1em
 }
 
 .site-header .header-inner nav ul li {
@@ -8503,7 +8503,7 @@ button, a {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  //letter-spacing: 0.1em;
   list-style: none
 }
 
@@ -8684,7 +8684,8 @@ button, a {
 }
 
 .menu .menu-close i {
-  font-size: 2rem
+  font-size: 2rem;
+  color: #FFFFFF;
 }
 
 .menu .top {
@@ -8707,7 +8708,7 @@ button, a {
   font-weight: 600;
   font-size: 1.25rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em
+  //letter-spacing: 0.1em
 }
 
 @media print, screen and (min-width: 40em) {
@@ -8721,7 +8722,7 @@ button, a {
   position: relative;
   display: inline-block;
   padding: 0.25rem 0;
-  color: #0C1017
+  color: #fff
 }
 
 @media print, screen and (min-width: 40em) {
@@ -8802,7 +8803,7 @@ button, a {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  //letter-spacing: 0.1em;
   color: #fefefe;
   background: #AB2B30
 }
@@ -9340,7 +9341,7 @@ button, a {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  //letter-spacing: 0.1em;
   color: #9E9FA2
 }
 
@@ -9352,7 +9353,7 @@ button, a {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  //letter-spacing: 0.1em;
   color: #9E9FA2
 }
 
@@ -9735,7 +9736,7 @@ button, a {
   margin-left: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  //letter-spacing: 0.1em;
   color: #fefefe
 }
 
@@ -11154,7 +11155,7 @@ button, a {
   font-weight: 600;
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em
+  //letter-spacing: 0.1em
 }
 
 .enquiry-form .form-block input, .enquiry-form .form-block select, .enquiry-form .form-block textarea {
@@ -11264,7 +11265,7 @@ button, a {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em
+  //letter-spacing: 0.1em
 }
 
 @media print, screen and (min-width: 40em) {
@@ -11296,11 +11297,13 @@ button, a {
     font-size: 40px;
   }
 }
-.social-contact{
+
+.social-contact {
   position: absolute;
   bottom: 80px;
   right: 0;
   line-height: 40px;
+
   a {
     color: #000;
     font-size: 40px;

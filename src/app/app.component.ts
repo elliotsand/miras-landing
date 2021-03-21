@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'miras-landing';
+  menuState = 'close';
+  openMenu() {
+    this.menuState = 'open';
+  }
+  closeMenu() {
+    this.menuState = 'close';
+  }
 }

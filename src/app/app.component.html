@@ -7,7 +7,7 @@
             <img src="assets/img/Logo-miras-2.png" alt="">
             <div id="lottie"></div>
           </a>
-          <button class="menu-trigger hide-for-large">
+          <button class="menu-trigger hide-for-large" (click)="openMenu()" >
             <!--
               <i class="material-icons">menu</i>
               -->
@@ -37,9 +37,9 @@
   </div>
 </header>
 
-<div class="menu">
-  <button class="menu-close">
-    <i class="material-icons">Cerrar</i>
+<div class="menu"  [ngClass]="{'is-open' : menuState == 'open'}">
+  <button class="menu-close" (click)="closeMenu()">
+    <i class="far fa-times-circle"></i>
   </button>
   <div class="top">
     <nav>
@@ -64,19 +64,8 @@
       </ul>
     </nav>
   </div>
-  <div class="bottom">
-    <div class="menu-contact">
-      <a href="tel:01339884433">
-        <i class="material-icons">telefono</i>
-      </a>
-      <a href="mailto:enquiries@gmcontractors.co.uk">
-        <i class="material-icons">mail</i>
-      </a>
-    </div>
-    <a class="menu-cta">Empieza tu proyecto</a>
-  </div>
 </div>
-<div class="menu-mask"></div>
+<div class="menu-mask" [ngClass]="{'active' : menuState == 'open'}" (click)="closeMenu()"></div>
 
 <router-outlet></router-outlet>
 
@@ -114,7 +103,7 @@
         <nav>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a routerLink="/">Home</a>
             </li>
             <li>
               <a routerLink="/projects">Servicios</a>

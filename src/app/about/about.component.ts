@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  open: boolean;
+  perfil: string;
   mision: string;
   constructor() {
   }
@@ -15,11 +15,11 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  modalOpen() {
-    this.open = true;
+  modalOpen(perfil) {
+    this.perfil = perfil;
   }
   closeOpen() {
-    this.open = false;
+    this.perfil = '';
   }
   openMision(mision) {
     this.mision = mision;

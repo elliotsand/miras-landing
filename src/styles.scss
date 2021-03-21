@@ -1187,7 +1187,7 @@ p.has-text-color a {
 }
 
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-fivehundredpx {
-  background-color: #000;
+  background-color: #4B4F55;
   color: #fff
 }
 
@@ -1269,7 +1269,7 @@ p.has-text-color a {
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-snapchat {
   background-color: #fefc00;
   color: #fff;
-  stroke: #000
+  stroke: #4B4F55
 }
 
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-soundcloud {
@@ -1369,7 +1369,7 @@ p.has-text-color a {
 }
 
 .wp-block-social-links.is-style-logos-only .wp-social-link-fivehundredpx {
-  color: #000
+  color: #4B4F55
 }
 
 .wp-block-social-links.is-style-logos-only .wp-social-link-flickr {
@@ -1434,7 +1434,7 @@ p.has-text-color a {
 
 .wp-block-social-links.is-style-logos-only .wp-social-link-snapchat {
   color: #fff;
-  stroke: #000
+  stroke: #4B4F55
 }
 
 .wp-block-social-links.is-style-logos-only .wp-social-link-soundcloud {
@@ -7757,7 +7757,7 @@ img {
 
 .img-banner {
   height: 50vw;
-  max-height: 80vh;
+  max-height: 60vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover
@@ -11012,6 +11012,7 @@ button, a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 
   .menu-close {
     position: absolute;
@@ -11023,6 +11024,10 @@ button, a {
 
   p {
     font-size: 12px;
+  }
+
+  &.active {
+    display: block;
   }
 }
 
@@ -11412,7 +11417,7 @@ button, a {
   line-height: 40px;
 
   a {
-    color: #000;
+    color: #4B4F55;
     font-size: 40px;
   }
 }

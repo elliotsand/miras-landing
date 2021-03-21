@@ -147,7 +147,7 @@
           <div class="cell">
             <ul class="card-list">
               <li class="card fade-up">
-                <div class="team" (click)="modalOpen()" data-modal>
+                <div class="team" (click)="modalOpen('edward')" data-modal>
                   <div class="image">
                     <div class="inner"
                          style="background-image:url('assets/img/Menu/pexels-mentatdgt-937481.jpg');"></div>
@@ -167,7 +167,7 @@
                 </div>
               </li>
               <li class="card fade-up">
-                <div class="team" (click)="modalOpen()" data-modal>
+                <div class="team" (click)="modalOpen('andres')" data-modal>
                   <div class="image">
                     <div class="inner"
                          style="background-image:url('assets/img/Menu/pexels-mentatdgt-937481.jpg');"></div>
@@ -193,38 +193,32 @@
     </div>
   </div>
 
-  <div class="ovelay" *ngIf="open">
+  <div class="ovelay" *ngIf="perfil">
 
-    <div class=" team-modal">
+    <div class=" team-modal" [ngClass]="{'active': perfil=='edward'}">
       <button class="menu-close" (click)="closeOpen()">
         <i class="fas fa-times"></i>
       </button>
       <h3 class="text-sm text-uppercase text-gray-md tracking-wide">ingeniero civil</h3>
-      <h2 class="text-lg text-bold text-black text-uppercase">Andres O. Romero Mego</h2>
-      <h3 class="text-md text-uppercase text-c-second tracking-wide">Jefe de Proyectos</h3>
+      <h2 class="text-lg text-bold text-black text-uppercase">Edward Medrano Lahura</h2>
+      <h3 class="text-md text-uppercase text-c-second tracking-wide">Jefe de Ingeniería</h3>
       <div class="team-bio-details">
 
         <div class="row">
-          <div class="value"><p>Ingeniero Civil Colegiado con CIP 167972 con 10 años de experiencia en el rubro de la
-            construcción, con altos conocimientos en la especialidad del diseño y cálculo estructural.
+          <div class="value"><p>Ingeniero Civil de profesión con experiencia en la dirección, supervisión y gestión de
+            costos en proyectos de Infraestructura y edificaciones.
             <br>
             <br>
-            Cuenta con amplia experiencia en la gestión de proyectos bajo los estándares del PMI, en la
-            dirección de obras de
-            infraestructuras bajo la filosofía Lean Construction (Edificios multifamiliares, centros educativos y
-            retail), con conocimientos de dirección de proyectos de puentes en provincias del Perú; así como en
-            construcción de obras de arte en minería.
-            <br>
-            <br>
-            Cuenta con estudios en Gestión de la calidad para la construcción
-            bajo los estándares del PMI, con diploma de Especialización en planificación y control de proyectos de
-            construcción, diploma de Especialización en BIM MANAGEMENT - CATALUNYA - ESPAÑA, capacitación en Residencia
-            de Obra - CIP y capacitación en Gestión de la Calidad estándares del PMI - PUCP. </p>
+            Cuenta con estudios de posgrado en BIM Management
+            por la Universidad Politécnica de Catalunya - Barcelona y especialización en Planificación y Control de
+            Proyectos de Construcción por la Universidad Peruana de Ciencias Aplicadas - UPC. Ha participado como Jefe
+            de Costos y Presupuestos, Jefe de Producción y Jefe de Proyectos en distintas empresas y obras a nivel
+            nacional. </p>
           </div>
         </div>
       </div>
     </div>
-    <div class=" team-modal">
+    <div class=" team-modal" [ngClass]="{'active': perfil=='andres'}">
       <button class="menu-close" (click)="closeOpen()">
         <i class="fas fa-times"></i>
       </button>

@@ -8423,14 +8423,17 @@ button, a {
   display: block;
 
 }
+
 .site-header img.gris {
   display: none;
 
 }
+
 .site-header.header-shrunk img.blanco {
   display: none;
 
 }
+
 .site-header.header-shrunk img.gris {
   display: block;
 
@@ -8591,7 +8594,8 @@ button, a {
   margin: 0 0 1rem 0;
   text-align: center;
   list-style: none;
-  justify-content: center;text-align: left;
+  justify-content: center;
+  text-align: left;
   color: #7f8081;
   letter-spacing: 0;
 }
@@ -9670,6 +9674,51 @@ button, a {
   box-shadow: 20px 20px 20px #00000029;
   padding: 42px 84px;
   margin: 0 0 45px;
+  display: none;
+  height: 250px;
+  position: relative;
+
+  .menu-close {
+    position: absolute;
+    top: 12px;
+    font-size: 30px;
+    right: 16px;
+    color: #6F4292;
+  }
+
+  &.active {
+    display: block;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+
+  .rich-text.box-shadow {
+    height: 350px;
+  }
+}
+
+.mision {
+  text-align: center;
+  margin: 0 0 50px;
+
+  img {
+    display: block;
+    margin: auto;
+    height: 250px;
+  }
+
+  &.active {
+    display: none;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .mision {
+    img {
+      height: 350px;
+    }
+  }
 }
 
 @media print, screen and (min-width: 40em) {

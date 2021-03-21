@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class AboutComponent implements OnInit {
 
   open: boolean;
-
+  mision: string;
   constructor() {
   }
 
@@ -20,5 +20,11 @@ export class AboutComponent implements OnInit {
   }
   closeOpen() {
     this.open = false;
+  }
+  openMision(mision) {
+    this.mision = mision;
+  }
+  closeMision() {
+    this.mision = '';
   }
 }

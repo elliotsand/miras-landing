@@ -67,20 +67,39 @@
           <div class="cell large-12 xlarge-9">
             <h2 class="text-sm text-bold text-uppercase text-center text-gray-md tracking-wide mb-md">nuestros
               principios</h2>
-            <div class="rich-text box-shadow">
+            <div class="mision" (click)="openMision('mision')" [ngClass]="{'active':mision=='mision'}">
+              <img src="assets/img/Mision.jpg" alt="">
+            </div>
+            <div class="rich-text box-shadow" [ngClass]="{'active':mision=='mision'}">
+              <button class="menu-close" (click)="closeMision()">
+                <i class="fas fa-times"></i>
+              </button>
               <h3>Misión</h3>
               <p>Brindar servicios de ingeniería y gestión de proyectos con altos estándares de calidad que contribuyan
                 a
                 la satisfacción de nuestros socios estratégicos mediante un entorno de gestión colaborativa aplicando la
                 metodología BIM</p>
             </div>
-            <div class="rich-text box-shadow">
+            <div class="mision" (click)="openMision('visión')" [ngClass]="{'active':mision=='visión'}">
+              <img src="assets/img/vision.jpg" alt="">
+            </div>
+            <div class="rich-text box-shadow" [ngClass]="{'active':mision=='visión'}">
+              <button class="menu-close" (click)="closeMision()">
+                <i class="fas fa-times"></i>
+              </button>
               <h3>visión</h3>
               <p>Ser reconocidos como la empresa líder de ingeniería y gestión de proyectos en el Perú con proyección
                 internacional, destacando nuestra capacidad técnica y operativa con el objetivo de generar valor
                 agregado a nuestros proyectos y satisfacción a nuestros socios estratégicos.</p>
             </div>
-            <div class="rich-text box-shadow">
+
+            <div class="mision" (click)="openMision('valores')" [ngClass]="{'active':mision=='valores'}">
+              <img src="assets/img/valores.jpg" alt="">
+            </div>
+            <div class="rich-text box-shadow" [ngClass]="{'active':mision=='valores'}">
+              <button class="menu-close" (click)="closeMision()">
+                <i class="fas fa-times"></i>
+              </button>
               <h3>valores</h3>
 
               <div class="grid-x align-center">
@@ -100,8 +119,6 @@
                   </ul>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -178,7 +195,36 @@
 
   <div class="ovelay" *ngIf="open">
 
-    <div id="team88" class=" team-modal">
+    <div class=" team-modal">
+      <button class="menu-close" (click)="closeOpen()">
+        <i class="fas fa-times"></i>
+      </button>
+      <h3 class="text-sm text-uppercase text-gray-md tracking-wide">ingeniero civil</h3>
+      <h2 class="text-lg text-bold text-black text-uppercase">Andres O. Romero Mego</h2>
+      <h3 class="text-md text-uppercase text-c-second tracking-wide">Jefe de Proyectos</h3>
+      <div class="team-bio-details">
+
+        <div class="row">
+          <div class="value"><p>Ingeniero Civil Colegiado con CIP 167972 con 10 años de experiencia en el rubro de la
+            construcción, con altos conocimientos en la especialidad del diseño y cálculo estructural.
+            <br>
+            <br>
+            Cuenta con amplia experiencia en la gestión de proyectos bajo los estándares del PMI, en la
+            dirección de obras de
+            infraestructuras bajo la filosofía Lean Construction (Edificios multifamiliares, centros educativos y
+            retail), con conocimientos de dirección de proyectos de puentes en provincias del Perú; así como en
+            construcción de obras de arte en minería.
+            <br>
+            <br>
+            Cuenta con estudios en Gestión de la calidad para la construcción
+            bajo los estándares del PMI, con diploma de Especialización en planificación y control de proyectos de
+            construcción, diploma de Especialización en BIM MANAGEMENT - CATALUNYA - ESPAÑA, capacitación en Residencia
+            de Obra - CIP y capacitación en Gestión de la Calidad estándares del PMI - PUCP. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" team-modal">
       <button class="menu-close" (click)="closeOpen()">
         <i class="fas fa-times"></i>
       </button>

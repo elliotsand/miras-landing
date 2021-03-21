@@ -13,4 +13,5 @@ export class AppComponent {
   closeMenu() {
     this.menuState = 'close';
   }
+  
 }

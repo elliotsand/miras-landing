@@ -1943,6 +1943,7 @@ body {
   color: #55585D;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
+  //bgi-carga
 }
 
 img {
@@ -8285,7 +8286,7 @@ button, a {
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  opacity: 1
+  opacity: 0.5
 }
 
 .site-header .header-inner .logo img {

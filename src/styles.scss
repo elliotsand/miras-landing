@@ -10327,19 +10327,19 @@ button, a {
   text-align: center;
   text-transform: uppercase;
   color: #fefefe;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
 }
 
 @media print, screen and (min-width: 40em) {
   .home-services a {
-    width: 50%;
+    display: block;
     border-right: 1px solid rgba(255, 255, 255, 0.1)
   }
 }
 
 @media print, screen and (min-width: 64em) {
   .home-services a {
-    width: 25%
   }
 }
 
@@ -10459,6 +10459,44 @@ button, a {
 
 .home-services .home-services-image.is-visible {
   opacity: 0.3
+}
+
+
+.home-service {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  .home-services-image {
+    opacity: 0.3
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+
+  .home-service {
+    width: 50%;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .home-services-image {
+      opacity: 0.3
+    }
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+
+  .home-service {
+    width: 25%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .home-services-image{
+      opacity: 0
+    }
+    &:hover {
+      .home-services-image {
+        opacity: 0.3
+      }
+    }
+  }
 }
 
 .home-projects-header {
@@ -11471,7 +11509,8 @@ button, a {
 
   font-size: 1rem;
 }
-.service-slide{
+
+.service-slide {
   object-fit: contain;
   height: 350px;
   padding: 0px 10px;

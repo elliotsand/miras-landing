@@ -45,8 +45,8 @@
           </a>
         </div>
         <a class="btn btn-stroke btn-black fade-up" style="width: 100%"
-        href="https://www.google.com/maps/place/Alfa+Centauro+149,+Distrito+de+Lima+15038/@-12.114944,-77.0036479,21z/data=!4m5!3m4!1s0x9105c7e46247cd45:0x41c0eb1bb9da071e!8m2!3d-12.1148867!4d-77.0036565"
-        target="_blank"><span>ENCUÉNTRANOS EN GOOGLE MAPS</span></a>
+           href="https://www.google.com/maps/place/Alfa+Centauro+149,+Distrito+de+Lima+15038/@-12.114944,-77.0036479,21z/data=!4m5!3m4!1s0x9105c7e46247cd45:0x41c0eb1bb9da071e!8m2!3d-12.1148867!4d-77.0036565"
+           target="_blank"><span>ENCUÉNTRANOS EN GOOGLE MAPS</span></a>
 
       </div>
     </div>
@@ -60,78 +60,95 @@
   <div class="grid-container">
     <div class="grid-x align-center">
       <div class="cell large-9 xlarge-7">
-        <div role="form" class="wpcf7" id="wpcf7-f17-o1" lang="en" dir="ltr">
-          <div class="screen-reader-response"></div>
-          <form action="/contact/#wpcf7-f17-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-            <div style="display: none;">
-              <input type="hidden" name="_wpcf7" value="17"/>
-              <input type="hidden" name="_wpcf7_version" value="5.1.6"/>
-              <input type="hidden" name="_wpcf7_locale" value="en"/>
-              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f17-o1"/>
-              <input type="hidden" name="_wpcf7_container_post" value="0"/>
-              <input type="hidden" name="g-recaptcha-response" value=""/>
-            </div>
-            <div class="enquiry-form" id="hideform">
+        <div role="form" class="" lang="en" dir="ltr">
+          <form novalidate [formGroup]="form" (ngSubmit)="onSubmit()">
+
+            <div class="enquiry-form">
               <div class="form-block">
-                <label for="name">NOMBRE</label>
-                <span class="wpcf7-form-control-wrap field-name">
-                  <input type="text" name="field-name" value="" size="40"
-                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                         id="name" autocomplete="off"
-                         aria-required="true" aria-invalid="false"
-                         placeholder=""/>
+                <span class=" field-tel">
+                <label>NOMBRE</label>
+                <input class=""
+                       name="name"
+                       type="text"
+                       id="name"
+                       formControlName="name"
+                       ngModel
+                       required>
+                  <span *ngIf="nameNotValid" class="alert">el campo es requerido</span>
                 </span>
               </div>
               <div class="form-block">
-                <label for="email">E-MAIL</label>
-                <span class="wpcf7-form-control-wrap field-email">
-                  <input type="email" name="field-email" value=""
-                         size="40"
-                         class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                         id="email" autocomplete="off"
-                         aria-required="true" aria-invalid="false"
-                         placeholder=""/></span>
+
+                <span class=" field-tel">
+                <label>E-MAIL</label>
+                <input type="email"
+                       name="email"
+                       formControlName="email"
+                       id="email"
+                       placeholder=""
+                       ngModel
+                       required
+                       class=" ">
+                <span *ngIf="emailNotValid" class="alert">el campo es requerido</span>
+                </span>
               </div>
               <div class="form-block">
+                <span class=" field-tel">
                 <label for="tel">TELÉFONO</label>
-                <span class="wpcf7-form-control-wrap field-tel">
-                  <input type="tel" name="field-tel" value="" size="40"
-                         class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
-                         id="tel" autocomplete="off" aria-required="true"
-                         aria-invalid="false"
-                         placeholder=""/></span>
+                <input type="tel"
+                       name="tel"
+                       class=""
+                       formControlName="tel"
+                       ngModel
+                       required
+                       id="tel"
+                       placeholder=""/>
+
+                <span *ngIf="telNotValid"  class="alert">el campo es requerido</span>
+                </span>
               </div>
               <div class="form-block">
-                <label for="subject">ASUNTO</label>
-                <span class="wpcf7-form-control-wrap field-subject">
-                  <select name="field-subject"
-                          class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
-                          id="subject" aria-required="true"
-                          aria-invalid="false">
-                    <option value="SELECCIONE">SELECCIONE</option>
-                    <option value="INGENIERÍA">INGENIERÍA</option>
-                    <option value="SUPERVISIÓN">SUPERVISIÓN</option>
-                    <option value="DIRECCIÓN">DIRECCIÓN Y GESTIÓN DE PROYECTOS</option>
-                    <option value="BIM">BIM / VDC</option>
-                    <option value="Other">Otros</option>
-                  </select>
+                <span class=" field-tel">
+                <label>ASUNTO</label>
+                <select name="subject"
+                        class=" "
+                        formControlName="subject"
+                        ngModel
+                        required
+                        id="subject">
+                  <option value="SELECCIONE">SELECCIONE</option>
+                  <option value="INGENIERÍA">INGENIERÍA</option>
+                  <option value="SUPERVISIÓN">SUPERVISIÓN</option>
+                  <option value="DIRECCIÓN">DIRECCIÓN Y GESTIÓN DE PROYECTOS</option>
+                  <option value="BIM">BIM / VDC</option>
+                  <option value="Other">Otros</option>
+                </select>
+
+                <span *ngIf="subjectNotValid" class="alert">el campo es requerido</span>
                 </span>
               </div>
               <div class="form-block form-block-full">
                 <label for="message">MENSAJE</label>
-                <span class="wpcf7-form-control-wrap field-enquiry">
-                  <textarea name="field-enquiry" cols="40" rows="10"
-                            class="wpcf7-form-control wpcf7-textarea"
-                            id="message"
-                            aria-invalid="false"></textarea></span>
+                <textarea name="message" cols="40" rows="10"
+                          class=" area"
+                          id="message"
+                          formControlName="message"
+                          ngModel
+                          required
+                          aria-invalid="false"></textarea>
+
+                <span *ngIf="messageNotValid" class="alert">el campo es requerido</span>
               </div>
               <div class="form-block form-block-full">
-                <button id='enquirySubmit' class="btn btn-primary wpcf7-submit">Enviar</button>
+                <button id='' type="submit" [ngClass]="{'active': !form.invalid}" [disabled]="form.invalid"
+                        class="btn btn-primary ">Enviar
+                </button>
               </div>
             </div>
-            <div class="wpcf7-response-output wpcf7-display-none"></div>
           </form>
+
         </div>
+
       </div>
     </div>
   </div>

@@ -1,0 +1,16 @@
+input, select{
+  width: 100%;
+}
+button{
+  opacity: 0.5;
+  &.active{
+    opacity: 1;
+  }
+}
+
+.alert{
+  color: red;
+  font-size: 12px;
+  position: relative;
+  top: -18px;
+}

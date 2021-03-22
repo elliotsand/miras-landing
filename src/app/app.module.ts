@@ -18,6 +18,8 @@ import {ServiceIngenieriaComponent} from './service-ingeneria/service-ingenieria
 import {ServiceSupervisionComponent} from './service-supervision/service-supervision.component';
 import {ServiceBimComponent} from './service-bim/service-bim.component';
 import {ServiceDireccionComponent} from './service-direccion/service-direccion.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -83,6 +85,8 @@ import {ServiceDireccionComponent} from './service-direccion/service-direccion.c
       {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
     ]),
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]

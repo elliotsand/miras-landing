@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +10,8 @@ import {FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
 export class ContactComponent implements OnInit {
   public form: any;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder,
+              private httpClient: HttpClient) {
     this.form = formBuilder.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
@@ -46,8 +48,32 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     if (this.form.valid) {
       console.log(this.form.value);
+      this.send();
     } else {
       alert('FILL ALL FIELDS');
     }
+  }
+
+  send(): void {
+    this.httpClient.post('https://gmail.googleapis.com/gmail/v1/users/elliotsand2@gmail.com/messages/send', {
+      fields: [
+        {
+          name: 'name',
+          value: this.form.name
+        },
+        {
+          name: 'email',
+          value: this.form.email
+        },
+        {
+          name: 'phone',
+          value: this.form.tel
+        },
+        {
+          name: 'message',
+          value: this.form.message
+        },
+      ]
+    });
   }
 }

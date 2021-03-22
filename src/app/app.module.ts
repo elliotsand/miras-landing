@@ -20,6 +20,7 @@ import {ServiceBimComponent} from './service-bim/service-bim.component';
 import {ServiceDireccionComponent} from './service-direccion/service-direccion.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import {FormsModule } from '@angular/forms';
     CarouselModule,
     BrowserAnimationsModule,
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: '',

@@ -11312,14 +11312,13 @@ button, a {
 }
 
 .article-image img {
-  margin-top: -5rem;
-  margin: auto;
+  margin: -5rem auto 0;
   display: block;
 }
 
 @media print, screen and (min-width: 40em) {
   .article-image img {
-    margin-top: -7.5rem
+    margin-top: -14.5rem
   }
 }
 
@@ -11443,6 +11442,7 @@ button, a {
     margin: auto;
   }
 }
+
 @media print, screen and (min-width: 60em) {
   .imgFooter {
     display: block;
@@ -11450,7 +11450,8 @@ button, a {
     margin: 0 74px;
   }
 }
-.logo-menu{
+
+.logo-menu {
   width: 200px;
   margin: auto;
   display: block;
@@ -11458,4 +11459,20 @@ button, a {
   bottom: 90px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.list-service {
+  li {
+    font-size: 1rem;
+  }
+}
+
+.p-service {
+
+  font-size: 1rem;
+}
+.service-slide{
+  object-fit: contain;
+  height: 350px;
+  padding: 0px 10px;
 }

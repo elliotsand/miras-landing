@@ -2327,7 +2327,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 
 p {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.3;
   text-rendering: optimizeLegibility
 }
@@ -7971,7 +7971,7 @@ button, a {
   }
 
   span {
-    font-size: 18px;
+    font-size: 16px;
     width: 180px;
     display: inline-block;
   }
@@ -9610,7 +9610,7 @@ button, a {
   color: white;
   background-color: #4B4F55;
   display: inline-block;
-  padding: 25px 50px;
+  padding: 25px 17px;
   margin: 25px 0 35px;
 }
 
@@ -11229,7 +11229,8 @@ button, a {
   color: #C2C3C5;
   opacity: 1;
   -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease
+  transition: color 0.3s ease;
+  margin: 0 8px;
 }
 
 .social li a:hover {
@@ -11438,7 +11439,23 @@ button, a {
 @media print, screen and (min-width: 40em) {
   .imgFooter {
     display: block;
+    width: 110px;
+    margin: auto;
+  }
+}
+@media print, screen and (min-width: 60em) {
+  .imgFooter {
+    display: block;
     width: 135px;
     margin: 0 74px;
   }
+}
+.logo-menu{
+  width: 200px;
+  margin: auto;
+  display: block;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }

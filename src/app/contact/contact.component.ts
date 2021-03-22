@@ -48,32 +48,9 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     if (this.form.valid) {
       console.log(this.form.value);
-      this.send();
+
     } else {
       alert('FILL ALL FIELDS');
     }
-  }
-
-  send(): void {
-    this.httpClient.post('https://gmail.googleapis.com/gmail/v1/users/elliotsand2@gmail.com/messages/send', {
-      fields: [
-        {
-          name: 'name',
-          value: this.form.name
-        },
-        {
-          name: 'email',
-          value: this.form.email
-        },
-        {
-          name: 'phone',
-          value: this.form.tel
-        },
-        {
-          name: 'message',
-          value: this.form.message
-        },
-      ]
-    });
   }
 }

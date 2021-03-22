@@ -8,7 +8,7 @@
             <img class="gris" src="assets/img/Logo-mira2s.png" alt="">
             <div id="lottie"></div>
           </a>
-          <button class="menu-trigger hide-for-large" (click)="openMenu()" >
+          <button class="menu-trigger hide-for-large" (click)="openMenu()">
             <!--
               <i class="material-icons">menu</i>
               -->
@@ -38,31 +38,36 @@
   </div>
 </header>
 
-<div class="menu"  [ngClass]="{'is-open' : menuState == 'open'}">
+<div class="menu" [ngClass]="{'is-open' : menuState == 'open'}">
   <button class="menu-close" (click)="closeMenu()">
     <i class="fas fa-times"></i>
   </button>
   <div class="top">
+    <a class="logo-menu" routerLink="/">
+      <img class="blanco" src="assets/img/Logo-miras-2.png" alt="">
+    </a>
     <nav>
+
       <ul id="menu-primary-menu-1" class="">
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-308"><a
-          title="Home" routerLink="/">Home</a></li>
+          title="Home" (click)="closeMenu()" routerLink="/">Home</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133">
-          <a title="Services"
+          <a title="Services" (click)="closeMenu()"
              routerLink="/services">Servicios</a>
         </li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134">
-          <a title="Projects"
+          <a title="Projects" (click)="closeMenu()"
              routerLink="/projects">Proyectos</a>
         </li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135">
-          <a title="About"
+          <a title="About" (click)="closeMenu()"
              routerLink="/about">Nosotros</a>
         </li>
         <li
           class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-137">
-          <a title="Contact" routerLink="/contact/">Contacto</a></li>
+          <a title="Contact" (click)="closeMenu()" routerLink="/contact/">Contacto</a></li>
       </ul>
+
     </nav>
   </div>
 </div>
@@ -79,7 +84,8 @@
           <h2 class="text-3xl text-bold text-uppercase fade-up"
               style="line-height: 1;">
             ¿ESTAS LISTO PARA TU PRóXIMO PROYECTO?</h2>
-          <a routerLink="/contact"><h4 class="text-2xl text-bold text-uppercase label-footer fade-up">PONTE EN CONTACTO CON NOSOTROS</h4></a>
+          <a routerLink="/contact"><h4 class="text-2xl text-bold text-uppercase label-footer fade-up">PONTE EN CONTACTO
+            CON NOSOTROS</h4></a>
           <h4 style="letter-spacing: 4px;" class="text-bold">TAMBIÉN PUEDES DESCARGAR</h4>
           <a class="btn btn-footer fade-up" href="#">
             <img src="assets/img/005-downloading.png" alt="">
@@ -97,20 +103,20 @@
 <footer class="site-footer">
   <div class="grid-container">
     <div class="grid-x">
-      <div class="cell large-2">
+      <div class="cell large-2 medium-3">
         <img class="imgFooter" src="assets/img/Logo-miras-223.png" alt="">
       </div>
-      <div class="cell large-6 show-for-medium">
+      <div class="cell large-6 medium-6">
         <nav>
           <ul>
             <li>
               <a routerLink="/">Home</a>
             </li>
             <li>
-              <a routerLink="/projects">Servicios</a>
+              <a routerLink="/services">Servicios</a>
             </li>
             <li>
-              <a routerLink="/services">Proyectos</a>
+              <a routerLink="/projects">Proyectos</a>
             </li>
           </ul>
           <ul>
@@ -123,14 +129,14 @@
             </li>
 
           </ul>
-<!--          <ul class="secondary">-->
-<!--            <li>-->
-<!--              <a routerLink="/terms-conditions">Terminos</a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--              <a routerLink="/privacy-cookies-policy">Privacidad</a>-->
-<!--            </li>-->
-<!--          </ul>-->
+          <!--          <ul class="secondary">-->
+          <!--            <li>-->
+          <!--              <a routerLink="/terms-conditions">Terminos</a>-->
+          <!--            </li>-->
+          <!--            <li>-->
+          <!--              <a routerLink="/privacy-cookies-policy">Privacidad</a>-->
+          <!--            </li>-->
+          <!--          </ul>-->
         </nav>
       </div>
       <!--      <div class="cell medium-shrink text-center">-->
@@ -150,8 +156,10 @@
         <ul class="social">
           <li>
             <a href="https://www.linkedin.com/company/" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/" target="_blank">
               <i class="fab fa-linkedin"></i>
-              <!--facebook-square-->
             </a>
           </li>
         </ul>

@@ -11,7 +11,7 @@ export class ContactComponent implements OnInit {
   public form: any;
 
   constructor(private formBuilder: FormBuilder,
-              private httpClient: HttpClient) {
+              private http: HttpClient) {
     this.form = formBuilder.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
@@ -47,10 +47,24 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     if (this.form.valid) {
-      console.log(this.form.value);
-
-    } else {
-      alert('FILL ALL FIELDS');
+      this.http.post<any>('https://mailthis.to/elliotsand2@gmail.com', {
+        name: this.form.value.name,
+        tel: this.form.value.tel,
+        email: this.form.value.email,
+        subject: this.form.value.subject,
+        message: this.form.value.message
+      }).subscribe(
+        (val) => {
+          console.log('POST call successful value returned in body',
+            val);
+        },
+        response => {
+          console.log('POST call in error', response);
+        },
+        () => {
+          console.log('The POST observable is now completed.');
+        });
     }
   }
 }
+

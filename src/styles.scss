@@ -8527,20 +8527,23 @@ button, a {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  //letter-spacing: 0.1em;
   list-style: none
 }
 
 @media print, screen and (min-width: 40em) {
   .site-footer nav ul {
-    width: 12.5rem;
     border-left: 1px solid rgba(255, 255, 255, 0.1)
   }
 }
 
 .site-footer nav ul li {
   margin-bottom: 0.5rem;
-  text-align: center
+  text-align: center;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.site-footer nav ul li.title {
+  font-size: 1.2rem;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -10476,6 +10479,7 @@ button, a {
     width: 50%;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
     .home-services-image {
       opacity: 0.3
     }
@@ -10487,9 +10491,11 @@ button, a {
   .home-service {
     width: 25%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    .home-services-image{
+
+    .home-services-image {
       opacity: 0
     }
+
     &:hover {
       .home-services-image {
         opacity: 0.3
@@ -11151,7 +11157,8 @@ button, a {
   flex: 1;
   color: #4B4F55
 }
-.team-modal .team-bio-details .row .value p{
+
+.team-modal .team-bio-details .row .value p {
   text-align: justify;
 }
 
@@ -11487,7 +11494,7 @@ button, a {
   .imgFooter {
     display: block;
     width: 135px;
-    margin: 0 74px;
+    margin: auto;
   }
 }
 

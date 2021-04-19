@@ -8542,6 +8542,7 @@ button, a {
   color: #fff;
   font-size: 0.8rem;
 }
+
 .site-footer nav ul li.title {
   font-size: 1.2rem;
 }
@@ -9678,7 +9679,9 @@ button, a {
   padding: 42px 84px;
   margin: 0 0 45px;
   display: none;
-  position: relative;
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
 
   .menu-close {
     position: absolute;
@@ -9690,6 +9693,8 @@ button, a {
 
   &.active {
     display: block;
+    width: 66%;
+    box-sizing: border-box;
   }
 }
 
@@ -9700,6 +9705,11 @@ button, a {
   }
 }
 
+.cont-mision {
+
+  display: block;
+}
+
 .mision {
   text-align: center;
   margin: 0 0 50px;
@@ -9708,6 +9718,7 @@ button, a {
     display: block;
     margin: auto;
     height: 250px;
+    object-fit: cover;
   }
 
   &.active {
@@ -9716,9 +9727,14 @@ button, a {
 }
 
 @media print, screen and (min-width: 40em) {
+
+  .cont-mision {
+
+    display: flex;
+  }
   .mision {
     img {
-      height: 350px;
+      height: 300px;
     }
   }
 }

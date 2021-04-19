@@ -67,56 +67,60 @@
           <div class="cell large-12 xlarge-9">
             <h2 class="text-sm text-bold text-uppercase text-center text-gray-md tracking-wide mb-md">nuestros
               principios</h2>
-            <div class="mision" (click)="openMision('mision')" [ngClass]="{'active':mision=='mision'}">
-              <img src="assets/img/Mision.png" alt="">
-            </div>
-            <div class="rich-text box-shadow" [ngClass]="{'active':mision=='mision'}">
-              <button class="menu-close" (click)="closeMision()">
-                <i class="fas fa-times"></i>
-              </button>
-              <h3>Misión</h3>
-              <p>Brindar servicios de ingeniería y gestión de proyectos con altos estándares de calidad que contribuyan
-                a
-                la satisfacción de nuestros socios estratégicos mediante un entorno de gestión colaborativa aplicando la
-                metodología BIM</p>
-            </div>
-            <div class="mision" (click)="openMision('visión')" [ngClass]="{'active':mision=='visión'}">
-              <img src="assets/img/vision.png" alt="">
-            </div>
-            <div class="rich-text box-shadow" [ngClass]="{'active':mision=='visión'}">
-              <button class="menu-close" (click)="closeMision()">
-                <i class="fas fa-times"></i>
-              </button>
-              <h3>visión</h3>
-              <p>Ser reconocidos como la empresa líder de ingeniería y gestión de proyectos en el Perú con proyección
-                internacional, destacando nuestra capacidad técnica y operativa con el objetivo de generar valor
-                agregado a nuestros proyectos y satisfacción a nuestros socios estratégicos.</p>
-            </div>
+            <div class="cont-mision">
+              <div class="mision" (click)="openMision('mision')" >
+                <img src="assets/img/Mision.png" alt="">
+              </div>
+              <div class="rich-text box-shadow" [ngClass]="{'active':mision=='mision'}">
+                <button class="menu-close" (click)="closeMision()">
+                  <i class="fas fa-times"></i>
+                </button>
+                <h3>Misión</h3>
+                <p>Brindar servicios de ingeniería y gestión de proyectos con altos estándares de calidad que
+                  contribuyan
+                  a
+                  la satisfacción de nuestros socios estratégicos mediante un entorno de gestión colaborativa aplicando
+                  la
+                  metodología BIM</p>
+              </div>
+              <div class="mision" (click)="openMision('visión')" >
+                <img src="assets/img/vision.png" alt="">
+              </div>
+              <div class="rich-text box-shadow" [ngClass]="{'active':mision=='visión'}">
+                <button class="menu-close" (click)="closeMision()">
+                  <i class="fas fa-times"></i>
+                </button>
+                <h3>visión</h3>
+                <p>Ser reconocidos como la empresa líder de ingeniería y gestión de proyectos en el Perú con proyección
+                  internacional, destacando nuestra capacidad técnica y operativa con el objetivo de generar valor
+                  agregado a nuestros proyectos y satisfacción a nuestros socios estratégicos.</p>
+              </div>
 
-            <div class="mision" (click)="openMision('valores')" [ngClass]="{'active':mision=='valores'}">
-              <img src="assets/img/valores.png" alt="">
-            </div>
-            <div class="rich-text box-shadow" [ngClass]="{'active':mision=='valores'}">
-              <button class="menu-close" (click)="closeMision()">
-                <i class="fas fa-times"></i>
-              </button>
-              <h3>valores</h3>
+              <div class="mision" (click)="openMision('valores')" >
+                <img src="assets/img/valores.png" alt="">
+              </div>
+              <div class="rich-text box-shadow" [ngClass]="{'active':mision=='valores'}">
+                <button class="menu-close" (click)="closeMision()">
+                  <i class="fas fa-times"></i>
+                </button>
+                <h3>valores</h3>
 
-              <div class="grid-x align-center">
-                <div class="cell large-6 xlarge-6">
-                  <ul>
-                    <li>Cooperación</li>
-                    <li>Confianza</li>
-                    <li>Eficiencia</li>
-                    <li>Experiencia</li>
-                  </ul>
-                </div>
-                <div class="cell large-6 xlarge-6">
-                  <ul>
-                    <li> Innovación Tecnológica</li>
-                    <li> Respeto</li>
-                    <li> Trabajo en Equipo</li>
-                  </ul>
+                <div class="grid-x align-center">
+                  <div class="cell large-6 xlarge-6">
+                    <ul>
+                      <li>Cooperación</li>
+                      <li>Confianza</li>
+                      <li>Eficiencia</li>
+                      <li>Experiencia</li>
+                    </ul>
+                  </div>
+                  <div class="cell large-6 xlarge-6">
+                    <ul>
+                      <li> Innovación Tecnológica</li>
+                      <li> Respeto</li>
+                      <li> Trabajo en Equipo</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

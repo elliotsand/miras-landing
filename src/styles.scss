@@ -8545,6 +8545,7 @@ button, a {
 
 .site-footer nav ul li.title {
   font-size: 1.2rem;
+  margin: 0;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -9693,8 +9694,9 @@ button, a {
 
   &.active {
     display: block;
-    width: 66%;
+    max-width: 940px;
     box-sizing: border-box;
+    width: 100%;
   }
 }
 

@@ -9710,7 +9710,6 @@ button, a {
 
 .mision {
   text-align: center;
-  margin: 0 0 50px;
 
   img {
     display: block;
@@ -9731,6 +9730,7 @@ button, a {
     display: flex;
   }
   .mision {
+    margin: 0 10px 50px;
     img {
       height: 300px;
     }

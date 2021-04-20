@@ -28,8 +28,10 @@ export class AboutComponent implements OnInit {
     this.mision = '';
   }
   clickTop(yset) {
-    const pos = window.pageYOffset;
-    window.scrollTo(0, yset);
+    const pos = window.screen.height;
+    window.scrollTo(0, yset - pos);
     console.log(yset);
+    console.log(window.screen.height);
   }
+
 }

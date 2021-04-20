@@ -18,5 +18,9 @@ export class HomeComponent implements OnInit {
       window.scrollTo(0, 0);
     });
   }
-
+ clickTop() {
+   const pos = window.pageYOffset;
+   window.scrollTo(0, 800);
+   console.log(pos);
+ }
 }

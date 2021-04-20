@@ -27,4 +27,9 @@ export class AboutComponent implements OnInit {
   closeMision() {
     this.mision = '';
   }
+  clickTop(yset) {
+    const pos = window.pageYOffset;
+    window.scrollTo(0, yset);
+    console.log(yset);
+  }
 }

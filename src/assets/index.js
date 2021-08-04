@@ -143,12 +143,6 @@ $('a[data-modal]').click(function(event) {
   return false;
 });
 
-// Venobox
-$(document).ready(function(){
-  $('.venobox').venobox({
-    bgcolor: 'transparent',
-  });
-});
 
 // Funcy select
 $('select[data-menu]').each(function() {

@@ -9054,7 +9054,7 @@ button, a {
 .card-list .card .team .image {
   position: relative;
   z-index: 1;
-  padding-top: 80%;
+  padding-top: 90%;
   background: #4b4f55
 }
 
@@ -9065,7 +9065,7 @@ button, a {
   bottom: 0;
   left: 0;
   opacity: 1;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: opacity 0.3s ease;

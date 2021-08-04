@@ -25,7 +25,7 @@ export class CarouselHolderComponent {
       740: {
         items: 3
       },
-      940: {
+      1100: {
         items: 4
       }
     },
